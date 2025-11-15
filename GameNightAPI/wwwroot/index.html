@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameNight</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>🎲 GameNight</h1>
+      <p>Подберите игру по настроению и количеству игроков!</p>
+    </header>
+
+    <main>
+      <div id="filters">
+        <label>
+          Minimum age:
+          <input type="number" id="age" min="1" max="100" placeholder="For example, 10" />
+        </label>
+        <label>
+          Maximum time (max):
+          <input type="number" id="maxDuration" min="1" max="600" placeholder="For example, 15" />
+        </label>
+        <label>
+          Minimum time (min):
+          <input type="number" id="minDuration" min="1" max="600" placeholder="For example, 15" />
+        </label>
+
+        <label>
+          Number of players:
+          <input type="number" id="players" min="1" max="20" placeholder="For example, 4" />
+        </label>
+
+        <label>
+          Mood:
+          <select id="mood">
+            <option value=""></option>
+            <option value="casual">Casual</option>
+            <option value="competitive">Competitive</option>
+            <option value="cooperative">Cooperative</option>
+          </select>
+        </label>
+
+        <label>
+          Difficulty:
+          <select id="difficulty">
+            <option value=""></option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+
+        <button id="searchBtn">Поиск</button>
+      </div>
+
+      
+
+      <section class="results" id="results">
+    
+      </section>
+    </main>
+    <footer>
+      <p>GameNight © 2025</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
